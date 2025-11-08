@@ -1,0 +1,12 @@
+{
+  "name": "finwise-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run server --prefix backend\" \"npm start --prefix frontend/finwise-dashboard\"",
+    "server": "node backend/server.js"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
